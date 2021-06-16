@@ -83,9 +83,12 @@ function Airplane(name) {
     this.tank = 0; 
     this.odometer = 0;
   }
-  Car.prototype.fuelUp= function fill(gallons){
-    return tank = gallons
+  Car.prototype.fill= function fill(gallons){
+    this.tank +=  gallons;
+    return this.tank
   }  
+
+  // console.log('Task 2', )
   /*
     TASK 3
       - Write a Baby constructor subclassing Person.
@@ -93,7 +96,7 @@ function Airplane(name) {
       - Besides the methods on Person.prototype, babies have the ability to `.play()`:
           + Should return a string "Playing with x", x being the favorite toy.
   */
- function Baby() {
+ function Baby(name, age, favoriteToy) {
    
   }
  
