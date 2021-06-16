@@ -97,10 +97,16 @@ function Airplane(name) {
           + Should return a string "Playing with x", x being the favorite toy.
   */
  function Baby(name, age, favoriteToy) {
-   
+   Person.call(this,name, age);// tellting the baby to inherit all of the persons attributes
+   this.favoriteToy = favoriteToy; // this is a special attribute for the child 
   }
  
-  
+  Baby.prototype = Object.create(Person.prototype); // this says inherit the persons methods
+  Baby.prototype.play = function(){
+    return `Playing with ${this.favoriteToy}`
+  }
+  // const  Baby = Baby 
+  // console.log('Task 3', Baby.play());
   /* 
     TASK 4
     In your own words explain the four principles for the "this" keyword below:
