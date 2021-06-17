@@ -105,15 +105,14 @@ function Airplane(name) {
   Baby.prototype.play = function(){
     return `Playing with ${this.favoriteToy}`
   }
-  // const  Baby = Baby 
-  // console.log('Task 3', Baby.play());
+  
   /* 
     TASK 4
     In your own words explain the four principles for the "this" keyword below:
-    1. 
-    2. 
-    3. 
-    4. 
+    1. window binding is really the result of not using "this" properly, comes from not assigning a prperty to it
+    2. implicit binding is the act of implying that a certain property is to be attached or become "this" 
+    3. new binding comes into play when using a constructor function, it causes "this" refers to the specific properties inside the object created by the function
+    4. explicit binding is the act of declaring without a doubt what "this" is to be by the use of certain keywords
   */
   
   
