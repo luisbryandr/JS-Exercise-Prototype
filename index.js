@@ -114,10 +114,10 @@ function Airplane(name) {
   /* 
     TASK 4
     In your own words explain the four principles for the "this" keyword below:
-    1. 
-    2. 
-    3. 
-    4. 
+    1. global binding - with the whole of JS document object
+    2. implicit - stating which object were referring to specifically (pointing a finger at an object IRL)
+    3. explicit - whenn using JS call or apply methods
+    4. new - when using constructor function new is pointing to the instance created from the templates object
   */
   
   
